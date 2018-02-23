@@ -1,0 +1,46 @@
+{% extends 'music/theme.html' %}
+{% block title %}Muxic | Đăng ký{% endblock title %}
+
+{% load staticfiles %}
+{% block body %}
+<!-- phan dang ki -->
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-md-6" id="signupinfo">
+            <div class="col-md-12">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-md-3 control-label">Tên Đăng Nhập</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="inputID3" placeholder="ID"
+                                   style="width: 400px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-md-3 control-label">Mật Khẩu</label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password"
+                                   style="width: 400px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputRePassword3" class="col-md-3 control-label">Nhập Lại Mật Khẩu</label>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control" id="inputRePassword3" placeholder="Re-Password"
+                                   style="width: 400px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-9 col-md-3">
+                            <button type="submit" class="btn btn-success">Đăng ký</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class=" col-md-offset-2 col-md-4">
+            <img src="{% static 'music/images/logo.png' %}" style="width: 200px; height: 200px;">
+        </div>
+    </div>
+</div>
+{% endblock body %}

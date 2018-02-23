@@ -1,0 +1,39 @@
+{% extends 'music/theme.html' %}
+{% block title %} Thêm album {% endblock title %}
+{% load staticfiles %}
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <!-- upload hinh album -->
+        </div>
+        <div class="col-md-8" id="Add">
+            <h1>Thêm Album mới</h1><br>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-md-3 control-label">Tên Ablum</label>
+                <div class="col-md-9" style="margin-bottom: 15px;">
+                    <input type="text" class="form-control" id="inputID3">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-md-3 control-label">Ca sĩ</label>
+                <div class="col-md-9" style="margin-bottom: 15px;">
+                    <input type="text" class="form-control" id="inputID3">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputRePassword3" class="col-md-3 control-label">Năm phát hành</label>
+                <div class="col-md-9" style="margin-bottom: 15px;">
+                    <input type="text" class="form-control" id="inputID3">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-10 col-md-2">
+                    <button type="submit" class="btn btn-success">Tải lên</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
